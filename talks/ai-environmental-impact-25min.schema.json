@@ -148,10 +148,10 @@
     }
   ],
   "references": [
-    "International Energy Agency (IEA). Electricity 2024 and AI/data-center analysis updates. https://www.iea.org/",
-    "Intergovernmental Panel on Climate Change (IPCC). AR6 Synthesis Report (2023). https://www.ipcc.ch/report/ar6/syr/",
+    "International Energy Agency (IEA). Electricity analysis and AI/data-center updates. https://www.iea.org/",
+    "Intergovernmental Panel on Climate Change (IPCC). AR6 Synthesis Report. https://www.ipcc.ch/report/ar6/syr/",
     "GHG Protocol. Corporate Standard and Scope 2 Guidance. https://ghgprotocol.org/",
-    "International Organization for Standardization (ISO). ISO 14064-1:2018 overview. https://www.iso.org/standard/66453.html"
+    "International Organization for Standardization (ISO). ISO 14064-1 overview. https://www.iso.org/standard/66453.html"
   ],
   "image_prompts": [
     "Modern AI data center with sustainability dashboard overlay, clean corporate style",
