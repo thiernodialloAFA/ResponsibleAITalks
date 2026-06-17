@@ -1,0 +1,193 @@
+{
+  "title": "Measure the Environmental Impact of AI",
+  "duration_minutes": 25,
+  "theme": "clean-corporate",
+  "slides": [
+    {
+      "slide": 1,
+      "title": "Measure the Environmental Impact of AI",
+      "subtitle": "A proactive approach to effective monitoring and initiatives",
+      "duration_sec": 30,
+      "bullets": [],
+      "speaker_note": "AI value and AI footprint are now inseparable.",
+      "visual": "Split-screen data center and sustainability dashboard"
+    },
+    {
+      "slide": 2,
+      "title": "Why this matters now",
+      "duration_sec": 90,
+      "bullets": [
+        "AI workload growth raises electricity demand",
+        "Regulatory and customer pressure for transparent disclosure",
+        "Cost and emissions optimization can align"
+      ],
+      "visual": "Trend chart: AI compute growth vs sustainability targets",
+      "sources": [
+        "IEA, 2024",
+        "IPCC AR6"
+      ]
+    },
+    {
+      "slide": 3,
+      "title": "AI supply-chain footprint",
+      "duration_sec": 120,
+      "bullets": [
+        "Data storage: continuous power, replication, tiering",
+        "Data centres: PUE, local air pollution, water usage (WUE) and water stress",
+        "Model training: bursty energy + embodied hardware emissions",
+        "Inference at scale: small per-request cost x billions of requests"
+      ],
+      "visual": "Supply-chain map with energy/carbon/water/air badges per stage"
+    },
+    {
+      "slide": 4,
+      "title": "Impact dimensions to track",
+      "duration_sec": 90,
+      "bullets": [
+        "Energy (kWh)",
+        "Carbon (kgCO2e)",
+        "Water (WUE and water-stress context)",
+        "Air quality (local pollution from generation and grid mix)",
+        "Hardware lifecycle emissions"
+      ],
+      "visual": "Multi-pillar icon diagram"
+    },
+    {
+      "slide": 5,
+      "title": "Core KPIs",
+      "duration_sec": 120,
+      "bullets": [
+        "Per-run: kWh, kgCO2e, duration",
+        "Per-service: gCO2e/request, Wh/request",
+        "Efficiency: model utility per kWh",
+        "Ops: telemetry and alert response coverage"
+      ],
+      "visual": "KPI table with formulas"
+    },
+    {
+      "slide": 6,
+      "title": "Measurement architecture",
+      "duration_sec": 120,
+      "bullets": [
+        "Collect workload telemetry",
+        "Join with infra power, PUE, and WUE",
+        "Apply carbon conversion factors",
+        "Store in sustainability time-series layer",
+        "Expose dashboards and policy checks"
+      ],
+      "visual": "Left-to-right architecture flow"
+    },
+    {
+      "slide": 7,
+      "title": "Instrumentation choices",
+      "duration_sec": 120,
+      "bullets": [
+        "Training: tracker + cluster telemetry",
+        "Inference: endpoint intensity proxies",
+        "Data pipelines: runtime and I/O metrics",
+        "Quarterly calibration for confidence"
+      ],
+      "visual": "Lifecycle vs telemetry confidence matrix"
+    },
+    {
+      "slide": 8,
+      "title": "Monitoring model",
+      "duration_sec": 120,
+      "bullets": [
+        "Absolute and intensity alert thresholds",
+        "Anomaly detection for impact drift",
+        "Sustainability SLOs alongside reliability",
+        "Weekly impact-ops review"
+      ],
+      "visual": "Alerting workflow"
+    },
+    {
+      "slide": 9,
+      "title": "Tackling energy use: high-impact initiatives",
+      "duration_sec": 150,
+      "bullets": [
+        "Model compression and right-sizing",
+        "Serving optimization (batching, autoscaling)",
+        "Carbon-aware scheduling and region choice",
+        "Efficient regions/providers (PUE, WUE, grid mix)",
+        "Retire low-value models and storage pipelines"
+      ],
+      "visual": "Impact vs effort 2x2 matrix"
+    },
+    {
+      "slide": 10,
+      "title": "Scaling AI while balancing sustainability",
+      "duration_sec": 120,
+      "bullets": [
+        "Efficiency as a first-class KPI: decouple growth from footprint",
+        "Carbon- and water-aware placement for new capacity",
+        "Tiered model strategy: small models for easy requests",
+        "Sustainability gates on scaling decisions",
+        "Shared/reusable models and caching over redundant retraining"
+      ],
+      "visual": "Decoupling curve: rising volume vs falling per-request intensity"
+    },
+    {
+      "slide": 11,
+      "title": "Governance and accountability",
+      "duration_sec": 120,
+      "bullets": [
+        "Clear owner map across product/model/platform",
+        "Promotion gates include impact estimate",
+        "Track and reduce impact debt",
+        "Quarterly AI impact scorecard"
+      ],
+      "visual": "RACI-style ownership grid"
+    },
+    {
+      "slide": 12,
+      "title": "Risks and mitigations",
+      "duration_sec": 120,
+      "bullets": [
+        "Estimate uncertainty -> calibration + confidence bands",
+        "Metric gaming -> balanced KPI set",
+        "Tool sprawl -> single source of truth",
+        "Team fatigue -> automation + top-driver focus"
+      ],
+      "visual": "Risk/mitigation table"
+    },
+    {
+      "slide": 13,
+      "title": "90-day roadmap",
+      "duration_sec": 120,
+      "bullets": [
+        "0-30: baseline, KPIs, owners",
+        "31-60: alerts, SLOs, pilots",
+        "61-90: scale and executive scorecard"
+      ],
+      "visual": "3-phase roadmap"
+    },
+    {
+      "slide": 14,
+      "title": "Closing call to action",
+      "duration_sec": 60,
+      "bullets": [
+        "Measure continuously",
+        "Monitor proactively",
+        "Improve systematically"
+      ],
+      "visual": "Three-icon summary"
+    }
+  ],
+  "references": [
+    "International Energy Agency (IEA). Electricity analysis and AI/data center updates. https://www.iea.org/",
+    "Intergovernmental Panel on Climate Change (IPCC). AR6 Synthesis Report. https://www.ipcc.ch/report/ar6/syr/",
+    "GHG Protocol. Corporate Standard and Scope 2 Guidance. https://ghgprotocol.org/",
+    "International Organization for Standardization (ISO). ISO 14064-1 overview. https://www.iso.org/standard/66453.html"
+  ],
+  "image_prompts": [
+    "Modern AI data center with sustainability dashboard overlay, clean corporate style",
+    "Minimal vector diagram of AI telemetry to carbon accounting pipeline",
+    "Executive dashboard showing emissions intensity trends and anomaly alerts"
+  ],
+  "guiding_questions": [
+    "What is the environmental impact across the AI supply chain (data storage, data centres, model training), including energy, carbon, air pollution, and water usage?",
+    "How can organisations tackle energy-usage concerns and bring sustainability to the forefront of responsible-AI discussions?",
+    "How do organisations encourage AI scalability while balancing sustainability concerns?"
+  ]
+}
