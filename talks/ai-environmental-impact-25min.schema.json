@@ -1,0 +1,161 @@
+{
+  "title": "Measure the Environmental Impact of AI",
+  "duration_minutes": 25,
+  "theme": "clean-corporate",
+  "slides": [
+    {
+      "slide": 1,
+      "title": "Measure the Environmental Impact of AI",
+      "subtitle": "A proactive approach to effective monitoring and initiatives",
+      "duration_sec": 30,
+      "bullets": [],
+      "speaker_note": "AI value and AI footprint are now inseparable.",
+      "visual": "Split-screen data center and sustainability dashboard"
+    },
+    {
+      "slide": 2,
+      "title": "Why this matters now",
+      "duration_sec": 90,
+      "bullets": [
+        "AI workload growth raises electricity demand",
+        "Regulatory and customer pressure for transparent disclosure",
+        "Cost and emissions optimization can align"
+      ],
+      "visual": "Trend chart: AI compute growth vs sustainability targets",
+      "sources": [
+        "IEA, 2024",
+        "IPCC AR6"
+      ]
+    },
+    {
+      "slide": 3,
+      "title": "Impact dimensions to track",
+      "duration_sec": 90,
+      "bullets": [
+        "Energy (kWh)",
+        "Carbon (kgCO2e)",
+        "Water (WUE and water-stress context)",
+        "Hardware lifecycle emissions"
+      ],
+      "visual": "4-pillar icon diagram"
+    },
+    {
+      "slide": 4,
+      "title": "Core KPIs",
+      "duration_sec": 150,
+      "bullets": [
+        "Per-run: kWh, kgCO2e, duration",
+        "Per-service: gCO2e/request, Wh/request",
+        "Efficiency: model utility per kWh",
+        "Ops: telemetry and alert response coverage"
+      ],
+      "visual": "KPI table with formulas"
+    },
+    {
+      "slide": 5,
+      "title": "Measurement architecture",
+      "duration_sec": 120,
+      "bullets": [
+        "Collect workload telemetry",
+        "Join with infra power and PUE",
+        "Apply carbon conversion factors",
+        "Store in sustainability time-series layer",
+        "Expose dashboards and policy checks"
+      ],
+      "visual": "Left-to-right architecture flow"
+    },
+    {
+      "slide": 6,
+      "title": "Instrumentation choices",
+      "duration_sec": 180,
+      "bullets": [
+        "Training: tracker + cluster telemetry",
+        "Inference: endpoint intensity proxies",
+        "Data pipelines: runtime and I/O metrics",
+        "Quarterly calibration for confidence"
+      ],
+      "visual": "Lifecycle vs telemetry confidence matrix"
+    },
+    {
+      "slide": 7,
+      "title": "Monitoring model",
+      "duration_sec": 150,
+      "bullets": [
+        "Absolute and intensity alert thresholds",
+        "Anomaly detection for impact drift",
+        "Sustainability SLOs alongside reliability",
+        "Weekly impact-ops review"
+      ],
+      "visual": "Alerting workflow"
+    },
+    {
+      "slide": 8,
+      "title": "High-impact initiatives",
+      "duration_sec": 210,
+      "bullets": [
+        "Model compression and right-sizing",
+        "Serving optimization (batching, autoscaling)",
+        "Carbon-aware workload shifting",
+        "Retire low-value models"
+      ],
+      "visual": "Impact vs effort 2x2 matrix"
+    },
+    {
+      "slide": 9,
+      "title": "Governance and accountability",
+      "duration_sec": 150,
+      "bullets": [
+        "Clear owner map across product/model/platform",
+        "Promotion gates include impact estimate",
+        "Track and reduce impact debt",
+        "Quarterly AI impact scorecard"
+      ],
+      "visual": "RACI-style ownership grid"
+    },
+    {
+      "slide": 10,
+      "title": "Risks and mitigations",
+      "duration_sec": 150,
+      "bullets": [
+        "Estimate uncertainty -> calibration + confidence bands",
+        "Metric gaming -> balanced KPI set",
+        "Tool sprawl -> single source of truth",
+        "Team fatigue -> automation + top-driver focus"
+      ],
+      "visual": "Risk/mitigation table"
+    },
+    {
+      "slide": 11,
+      "title": "90-day roadmap",
+      "duration_sec": 120,
+      "bullets": [
+        "0-30: baseline, KPIs, owners",
+        "31-60: alerts, SLOs, pilots",
+        "61-90: scale and executive scorecard"
+      ],
+      "visual": "3-phase roadmap"
+    },
+    {
+      "slide": 12,
+      "title": "Closing call to action",
+      "duration_sec": 60,
+      "bullets": [
+        "Measure continuously",
+        "Monitor proactively",
+        "Improve systematically"
+      ],
+      "visual": "Three-icon summary"
+    }
+  ],
+  "references": [
+    "International Energy Agency (IEA): https://www.iea.org/",
+    "IPCC AR6 Synthesis Report: https://www.ipcc.ch/report/ar6/syr/",
+    "GHG Protocol standards: https://ghgprotocol.org/",
+    "ISO 14064-1 overview: https://www.iso.org/standard/66453.html"
+  ],
+  "image_prompts": [
+    "Modern AI data center with sustainability dashboard overlay, clean corporate style",
+    "Minimal vector diagram of AI telemetry to carbon accounting pipeline",
+    "Executive dashboard showing emissions intensity trends and anomaly alerts"
+  ]
+}
