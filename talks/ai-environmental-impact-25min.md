@@ -1,7 +1,7 @@
 # 25-Minute Talk: Measure the Environmental Impact of AI and Build Proactive Monitoring
 
 ## Audience and objective
-- **Audience**: AI leaders, ML engineers, platform teams, sustainability leads.
+- **Audience**: top management (executive sponsors), Chief Data Officers (CDOs), AI managers, AI leaders, ML engineers, platform teams, sustainability leads.
 - **Objective**: move from occasional reporting to continuous, operational carbon accountability in AI systems.
 
 ## Talk at a glance (25 minutes)
