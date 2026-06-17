@@ -29,20 +29,33 @@
     },
     {
       "slide": 3,
+      "title": "AI supply-chain footprint",
+      "duration_sec": 120,
+      "bullets": [
+        "Data storage: continuous power, replication, tiering",
+        "Data centres: PUE, local air pollution, water usage (WUE) and water stress",
+        "Model training: bursty energy + embodied hardware emissions",
+        "Inference at scale: small per-request cost x billions of requests"
+      ],
+      "visual": "Supply-chain map with energy/carbon/water/air badges per stage"
+    },
+    {
+      "slide": 4,
       "title": "Impact dimensions to track",
       "duration_sec": 90,
       "bullets": [
         "Energy (kWh)",
         "Carbon (kgCO2e)",
         "Water (WUE and water-stress context)",
+        "Air quality (local pollution from generation and grid mix)",
         "Hardware lifecycle emissions"
       ],
-      "visual": "4-pillar icon diagram"
+      "visual": "Multi-pillar icon diagram"
     },
     {
-      "slide": 4,
+      "slide": 5,
       "title": "Core KPIs",
-      "duration_sec": 150,
+      "duration_sec": 120,
       "bullets": [
         "Per-run: kWh, kgCO2e, duration",
         "Per-service: gCO2e/request, Wh/request",
@@ -52,12 +65,12 @@
       "visual": "KPI table with formulas"
     },
     {
-      "slide": 5,
+      "slide": 6,
       "title": "Measurement architecture",
       "duration_sec": 120,
       "bullets": [
         "Collect workload telemetry",
-        "Join with infra power and PUE",
+        "Join with infra power, PUE, and WUE",
         "Apply carbon conversion factors",
         "Store in sustainability time-series layer",
         "Expose dashboards and policy checks"
@@ -65,9 +78,9 @@
       "visual": "Left-to-right architecture flow"
     },
     {
-      "slide": 6,
+      "slide": 7,
       "title": "Instrumentation choices",
-      "duration_sec": 180,
+      "duration_sec": 120,
       "bullets": [
         "Training: tracker + cluster telemetry",
         "Inference: endpoint intensity proxies",
@@ -77,9 +90,9 @@
       "visual": "Lifecycle vs telemetry confidence matrix"
     },
     {
-      "slide": 7,
+      "slide": 8,
       "title": "Monitoring model",
-      "duration_sec": 150,
+      "duration_sec": 120,
       "bullets": [
         "Absolute and intensity alert thresholds",
         "Anomaly detection for impact drift",
@@ -89,21 +102,35 @@
       "visual": "Alerting workflow"
     },
     {
-      "slide": 8,
-      "title": "High-impact initiatives",
-      "duration_sec": 210,
+      "slide": 9,
+      "title": "Tackling energy use: high-impact initiatives",
+      "duration_sec": 150,
       "bullets": [
         "Model compression and right-sizing",
         "Serving optimization (batching, autoscaling)",
-        "Carbon-aware workload shifting",
-        "Retire low-value models"
+        "Carbon-aware scheduling and region choice",
+        "Efficient regions/providers (PUE, WUE, grid mix)",
+        "Retire low-value models and storage pipelines"
       ],
       "visual": "Impact vs effort 2x2 matrix"
     },
     {
-      "slide": 9,
+      "slide": 10,
+      "title": "Scaling AI while balancing sustainability",
+      "duration_sec": 120,
+      "bullets": [
+        "Efficiency as a first-class KPI: decouple growth from footprint",
+        "Carbon- and water-aware placement for new capacity",
+        "Tiered model strategy: small models for easy requests",
+        "Sustainability gates on scaling decisions",
+        "Shared/reusable models and caching over redundant retraining"
+      ],
+      "visual": "Decoupling curve: rising volume vs falling per-request intensity"
+    },
+    {
+      "slide": 11,
       "title": "Governance and accountability",
-      "duration_sec": 150,
+      "duration_sec": 120,
       "bullets": [
         "Clear owner map across product/model/platform",
         "Promotion gates include impact estimate",
@@ -113,9 +140,9 @@
       "visual": "RACI-style ownership grid"
     },
     {
-      "slide": 10,
+      "slide": 12,
       "title": "Risks and mitigations",
-      "duration_sec": 150,
+      "duration_sec": 120,
       "bullets": [
         "Estimate uncertainty -> calibration + confidence bands",
         "Metric gaming -> balanced KPI set",
@@ -125,7 +152,7 @@
       "visual": "Risk/mitigation table"
     },
     {
-      "slide": 11,
+      "slide": 13,
       "title": "90-day roadmap",
       "duration_sec": 120,
       "bullets": [
@@ -136,7 +163,7 @@
       "visual": "3-phase roadmap"
     },
     {
-      "slide": 12,
+      "slide": 14,
       "title": "Closing call to action",
       "duration_sec": 60,
       "bullets": [
@@ -157,5 +184,10 @@
     "Modern AI data center with sustainability dashboard overlay, clean corporate style",
     "Minimal vector diagram of AI telemetry to carbon accounting pipeline",
     "Executive dashboard showing emissions intensity trends and anomaly alerts"
+  ],
+  "guiding_questions": [
+    "What is the environmental impact across the AI supply chain (data storage, data centres, model training), including energy, carbon, air pollution, and water usage?",
+    "How can organisations tackle energy-usage concerns and bring sustainability to the forefront of responsible-AI discussions?",
+    "How do organisations encourage AI scalability while balancing sustainability concerns?"
   ]
 }
